@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Cadastro</title>
+    <title>Cadastrar veículo</title>
 </head>
 <body>
     <header>
@@ -18,19 +18,19 @@
         <div id="dadosProprietario">
             <div>
                 <label for="nome">Nome</label><br>
-                <input type="text" name="nome" id="nome" required>
+                <input type="text" name="nome" id="nome" require placeholder="Ex: João">
             </div>
             <div>
                 <label for="sobrenome">Sobrenome</label><br>
-                <input type="text" name="sobrenome" id="sobrenome">
+                <input type="text" name="sobrenome" id="sobrenome" required placeholder="Ex: Silva">
             </div>
             <div>
                 <label for="tel">Telefone</label><br>
-                <input type="number" name="tel" id="tel" required>
+                <input type="number" name="tel" id="tel" required placeholder="(99)99999-9999">
             </div>
             <div>
                 <label for="cpf">CPF</label><br>
-                <input type="number" name="cpf" id="cpf" required>
+                <input type="number" name="cpf" id="cpf" required placeholder="XXX.XXX.XXX-XX">
             </div>
         </div>
     </fieldset>
@@ -39,7 +39,7 @@
         <div id="marca">
             <label>Selecione a marca do veículo:</label>
             <label class="radio">
-                <input type="radio" name="marca" value="chevrolet">Chevrolet
+                <input type="radio" name="marca" value="chevrolet" checked>Chevrolet
             </label>
             <label class="radio">
                 <input type="radio" name="marca" value="toyota">Toyota
@@ -57,7 +57,7 @@
         <div id="anoPlaca">
             <div>
                 <label for="ano">Ano do veículo:</label>
-                <select name="ano" id="ano">
+                <select name="ano" id="ano" required>
                     <option selected disabled> -- </option>
                     <option>2000</option>
                     <option>2001</option>
@@ -86,12 +86,12 @@
             </div>
             <div id="divPlaca">
                 <label for="placa">Placa</label><br>
-                <input type="text" name="placa" id="placa">
+                <input type="text" name="placa" id="placa" required>
             </div>
         </div>
         <div>
             <label for="motivo">Motivo de estar colocando o veículo a venda: </label>
-            <textarea id="motivo" name="motivo" rows="5" cols="30"></textarea>
+            <textarea id="motivo" name="motivo" rows="5" cols="48" placeholder="Escreva aqui..."></textarea>
         </div>
     </fieldset>
     <button type="submit">Registrar veículo</button>
