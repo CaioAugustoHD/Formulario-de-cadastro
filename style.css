@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border: 1px solid red;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1{
+    font-family: 'Crete Round', serif;
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.07em;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    margin: auto;
+}
+
+#dadosProprietario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+#dadosProprietario div{
+    width: 40%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#dadosProprietario div input, #placa{
+    font-size: 1.2em;
+}
+
+#dadosVeiculo > div {
+    padding: 20px;
+}
+
+#marca label:first-child, #dadosProprietario > div > label, #anoPlaca > div > label, #divPlaca > label, label[for="motivo"]{
+    font-weight: bold;
+    font-size: 1.07em;
+}
+
+#marca > label.radio {
+    margin-left: 10px;
+}
+
+#anoPlaca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#anoPlaca > div {
+    width: 44%;
+    padding-bottom: 8px;
+}
+
+#divPlaca{
+    text-align: center;
+}
+
+#motivo{
+    vertical-align:text-top;
+}
+
+legend{
+    border: 1px solid red;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+button{
+    display: block;
+    margin: 8px auto;
+    padding: 4px 3px;
+    font-size: 1.1em;
+}

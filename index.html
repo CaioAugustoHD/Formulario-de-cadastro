@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>CADASTRO DO VEÍCULO</h1>
+        <p>Complete abaixo as informações para registrar o anúncio do seu carro</p>
+    </header>
+    <form>
+    <fieldset>
+    <legend>Dados do proprietário</legend>
+        <div id="dadosProprietario">
+            <div>
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label><br>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+            <div>
+                <label for="tel">Telefone</label><br>
+                <input type="number" name="tel" id="tel" required>
+            </div>
+            <div>
+                <label for="cpf">CPF</label><br>
+                <input type="number" name="cpf" id="cpf" required>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset id="dadosVeiculo">
+    <legend>Dados do veículo</legend>
+        <div id="marca">
+            <label>Selecione a marca do veículo:</label>
+            <label class="radio">
+                <input type="radio" name="marca" value="chevrolet">Chevrolet
+            </label>
+            <label class="radio">
+                <input type="radio" name="marca" value="toyota">Toyota
+            </label>
+            <label class="radio">
+                <input type="radio" name="marca" value="volkswagen">Wolkswagen
+            </label>
+            <label class="radio">
+                <input type="radio" name="marca" id="fiat">Fiat
+            </label>
+            <label class="radio">
+                <input type="radio" name="marca" id="ford">Ford
+            </label>
+        </div>
+        <div id="anoPlaca">
+            <div>
+                <label for="ano">Ano do veículo:</label>
+                <select name="ano" id="ano">
+                    <option selected disabled> -- </option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                </select>
+            </div>
+            <div id="divPlaca">
+                <label for="placa">Placa</label><br>
+                <input type="text" name="placa" id="placa">
+            </div>
+        </div>
+        <div>
+            <label for="motivo">Motivo de estar colocando o veículo a venda: </label>
+            <textarea id="motivo" name="motivo" rows="5" cols="30"></textarea>
+        </div>
+    </fieldset>
+    <button type="submit">Registrar veículo</button>
+    </form>
+    
+</body>
+</html>
