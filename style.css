@@ -27,7 +27,8 @@ body{
     font-family: 'Roboto', sans-serif;
     width: 60%;
     margin: auto;
-    background-color: #ecfcff;
+    background-color: #dcebef;
+    position: relative;
 }
 
 #dadosProprietario{
@@ -83,6 +84,8 @@ body{
 input, textarea, select{
     border-radius: 5px;
     border: 1px solid black;
+    padding: 6px 9px;
+    margin-top: 6px;
 }
 
 input[type="text"],input[type="number"], textarea, select{
